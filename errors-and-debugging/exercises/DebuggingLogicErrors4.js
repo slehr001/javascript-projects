@@ -8,6 +8,7 @@ let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;
 let computerStatus = 'green';
+let launchReadyCrew = false
 
 if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
@@ -24,7 +25,7 @@ if (crewStatus && computerStatus === 'green'){
    launchReady = true;
 } else {
    console.log('WARNING: Crew or computer not ready!');
-   launchReady = false;
+   launchReadyCrew = false;
 }
 
 console.log("launchReady = ", launchReady);
